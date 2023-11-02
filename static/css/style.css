@@ -1,0 +1,242 @@
+/*GERAIS*/
+html{
+    font-size: 16px;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 14px;
+    }
+    #logo {
+        width: 25%;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .masthead h1 {
+        font-size: 3em;
+    }
+    .masthead p {
+        font-size: 1em;
+    }
+    .section-heading {
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width:425px) {
+    html{
+        font-size: 12px;
+    }
+    #logo {
+        width: 50%;
+    }
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    .masthead h1 {
+        font-size: 2.5em;
+    }
+    .masthead p {
+        font-size: 0.8em;
+    }
+    .section-heading {
+        font-size: 3.5vw;
+    }
+}
+body{
+    font-family: "Roboto Mono", sans-serif;
+    overflow-x: hidden;
+    background-color: #e2e2e2;
+    text-decoration: none;
+}
+.container-fluid{
+    padding: 2.5rem 0px;
+    width: 100vw;
+}
+section{
+    width: 100vw;
+}
+p,li{
+    color: #fff;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #BE4BC9;
+}
+li{
+    list-style: none;
+}
+
+/* Header*/
+header, .navbar{
+    background-color: #280468;
+    padding: 0.5% 2%;
+}
+#logo{
+    width: 10%;
+}
+.navbar-brand{
+    padding: 0%;
+    color: #fff;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+#navbar-links a{
+    color: #fff;
+}
+#navbar-links a:hover{
+    color:#BE4BC9;
+}
+#navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+.navbar-toggler{
+    color: #494949;
+    background-color: #BE4BC9;
+}
+
+
+/* Masthead */
+.masthead {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.masthead-parallax {
+    background-image: url('/static/imagens/fundo.jpg'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.masthead-parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.masthead h1 {
+    font-size: 4em;
+}
+
+.masthead p {
+    font-size: 1.2em;
+    width: 100%;
+}
+.btn{
+    background-color: #BE4BC9;
+    color: #fff!important;
+    border-color: #280468;
+}
+.btn:hover{
+    background-color: #280468;
+    border-color: #BE4BC9;
+    color: #fff!important;}
+
+/* Section */
+.section-heading{
+    color: #ffffff;
+    text-align: center;
+    font-size: 3vw;
+}
+.heading-container-fluid{
+    background-color: #280468;
+    width: 100vw;
+    justify-self: center;
+    margin: 2% 0;
+}
+
+/* Destaques */
+.destaques{
+    background-color: #e2e2e2;
+}
+.destaques img{
+    width: 100%;
+}
+.destaques .card{
+    background-color: #280468;
+    padding: 3%;
+}
+.destaques .card .card-title{
+    color: #fff;
+}
+.destaques .card .description{
+    color: #f58bff;
+    text-align: center;
+}
+
+/* Sobre */
+section#fixed-img.sobre{
+    padding: 0px ;
+}
+
+    @media (min-width: 768px) {
+        #fixed-img {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-image: url("/static/imagens/fundo.jpg")!important;
+        }
+        #fixed-img .text-center {
+        display: flex;
+        align-items: center;
+        }
+    }
+    #fixed-img p {
+        font-size: 100%;
+        margin: 0;
+    }
+    #fixed-img {
+        background-image: url("/static/imagens/fundo.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+    }
+
+/* Video */
+.video-player{
+    display: flex;
+    justify-content: center;
+}
+
+/* Contato */
+section.contato{
+    background-color: #494949;
+    margin: 2% 0 0;
+    color: #BE4BC9;
+}
+section.contato p{
+    font-size: 18px;    
+    text-align: center;
+}
+section.contato h2{
+    text-align: center;
+}
+
+
+/* CTA */
+section.cta p{
+    color: #280468;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer{
+    background-color: #280468;
+}
+footer img{
+    width: 150px;
+}
+footer h3{
+    color: #BE4BC9;
+}
