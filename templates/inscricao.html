@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="escolaridade" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se</title>
+    <!-- Bootstrap - CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/24becb02f7.js" crossorigin="anonymous"></script>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/static/imagens/favicon.png" type="image/x-icon">
+    <!--Css-->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/inscricao.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top bg-dark-color" id="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <img src="/static/imagens/logo.png" alt="techgirl" />
+            <span>Tech Girl</span>
+        </div>
+        <button
+            class="navbar-toggler bg-primary-color"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="navbar-items"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/templates/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn
+                " role="button" href="inscricao.html">Inscreva-se</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="form" id="form">
+    <div class="container">
+        
+        <div class="row" id="form-heading">
+            <h1 id="titulo"><strong>Inscrição Tech Girl</strong></h1>
+            <p id="subtitulo"><strong>Preencha seus dados no formulário abaixo e garanta a sua vaga!</strong></p>
+        </div>
+
+        <form>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome Completo:</strong></label>
+                        <input type="text" name="nome" id="nome"/>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="campo">
+                        <label for="idade"><strong>Data de Nascimento:</strong></label>
+                        <input type="date" name="idade" id="idade">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="campo">
+                        <label for="email"><strong>Email:</strong></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="campo">
+                        <label for="cel"><strong>Celular:</strong></label>
+                        <input type="tel" name="cel" id="cel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="campo" id="escolaridade">
+                <label for="escolaridade"><strong>Escolaridade:</strong></label>
+
+                <label>
+                    <input class="radio" type="radio" name="escolaridade" value="fundamental"> Ensino Fundamental
+                </label>
+
+                <label>
+                    <input class="radio" type="radio" name="escolaridade" value="medio"> Ensino Médio
+                </label>
+
+                <label>
+                    <input class="radio" type="radio" name="escolaridade" value="graduação"> Graduação
+                </label>
+
+                <label>
+                    <input class="radio" type="radio" name="escolaridade" value="pós-graduação"> Pós-Graduação
+                </label>
+            </div>
+
+            <fieldset class="campo">
+                <div id="check">
+                    <label><strong>Onde ouviu falar da Tech Girl?</strong> (pode selecionar mais de uma opção)</label>
+                    <div class="check-item">
+                        <input type="checkbox" id="opcao1" name="opcao1" value="Redes Sociais">
+                        <label for="opcao1"> Redes Sociais</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="opcao2" name="opcao2" value="Indicação de Influenciadores(as)">
+                        <label for="opcao2"> Indicação de Influenciadores(as)</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="opcao3" name="opcao3" value="Anúncios">
+                        <label for="opcao3"> Anúncios</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="opcao4" name="opcao4" value="Google">
+                        <label for="opcao4"> Google</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="opcao5" name="opcao5" value="Indicação de Amigos/ Família">
+                        <label for="opcao5"> Indicação de Amigos/ Família</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="interesse"><strong>Por que você está interessada em fazer parte da Tech Girl?</strong></label>
+                <textarea rows="5" style="width: 43.1em" id="interesse" name="interesse"></textarea>
+            </div>
+
+            <div class="botao">
+                <button type="submit" onsubmit=""><strong>Concluído</strong></button>
+            </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="texto-final">
+    <p>Parabéns por se inscrever, tech girl! Estamos animadas para ter você conosco nessa jornada de desenvolvimento web.<br> Fique de olho na sua caixa de entrada, pois a equipe do Tech Girl entrará em contato pelo e-mail que você cadastrou.<br> Enquanto isso, prepare-se para mergulhar no mundo do código e da criação!</p>
+</div>
+
+<!--FOOTER-->
+<footer>
+    <div class="container">
+        <div class="d-flex">
+            <div class="endereco col-md-4 text-center">
+                <h3>Horário de Atendimento:</h3>
+                <p>Seg à Sex: das 8h às 18h</p>
+                <p>Sábados: das 8h às 16h</p>
+            </div>
+            <div class="logo col-md-4 text-center">
+                <img src="/static/imagens/logo.png" alt="">
+            </div>
+            <div class="links-uteis col-md-4 text-center">
+                <h3>Links Úteis:</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

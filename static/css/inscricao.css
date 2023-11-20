@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+#form{
+    margin: 6rem 15rem 0rem 15rem;
+}
+form{
+    padding: 2%;
+    background-color: #7B23E757;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+#form-heading{
+    font-family:"Roboto Mono", sans-serif!important;
+    display: flex;
+}
+#titulo{
+    text-align: center;
+    color: #280468;
+}
+#subtitulo{
+    text-align: center;
+    color: #280468;
+    font-size: 1.1rem;
+}
+input, select, textarea, button {
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+#check{
+    display: flex;
+    flex-direction: column;
+}
+.check-item{
+    display: flex;
+    justify-items: center;
+}
+.check-item label{
+    margin-left: 1%;
+}
+textarea{
+    width: 809px;
+}
+.botao{
+    margin: 0 15rem;
+    display: flex;
+    justify-content: center;
+}
+button{
+    color: #ffffff;
+    background-color: #280468;
+    width: 8rem;
+    height: 3rem;
+}
+button:hover{
+    color: #fff;
+    background-color: #7B23E7;
+}
+.texto-final p{
+    text-align: center;
+    color: #280468;
+    margin-bottom: 2.5rem;
+}

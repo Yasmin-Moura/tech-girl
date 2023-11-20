@@ -1,123 +1,103 @@
-/*GERAIS*/
-html{
-    font-size: 16px;
+/* Gerais */
+*{
     padding: 0%;
     margin: 0%;
-    width: 100%;
-}
-@media screen and (max-width:768px) {
-    html{
-        font-size: 14px;
-    }
-    #logo {
-        width: 25%;
-    }
-    .navbar-brand {
-        font-size: 1.5rem;
-    }
-    .masthead h1 {
-        font-size: 3em;
-    }
-    .masthead p {
-        font-size: 1em;
-    }
-    .section-heading {
-        font-size: 4vw;
-    }
-}
-@media screen and (max-width:425px) {
-    html{
-        font-size: 12px;
-    }
-    #logo {
-        width: 50%;
-    }
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-    .masthead h1 {
-        font-size: 2.5em;
-    }
-    .masthead p {
-        font-size: 0.8em;
-    }
-    .section-heading {
-        font-size: 3.5vw;
-    }
-}
-body{
-    font-family: "Roboto Mono", sans-serif;
     overflow-x: hidden;
-    background-color: #e2e2e2;
     text-decoration: none;
 }
-.container-fluid{
-    padding: 2.5rem 0px;
-    width: 100vw;
+html{
+    font-size: 18px;
 }
-section{
-    width: 100vw;
+body{
+    background-color: #e2e2e2;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: unset;
+    font-family: "Roboto Mono", sans-serif;
+}
+.container{
+    padding: 2.5rem 0px;
 }
 p,li{
-    color: #fff;
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color:#fff;
 }
 a:hover{
-    color: #BE4BC9;
+    color: #ffbdca;
 }
 li{
     list-style: none;
 }
-
-/* Header*/
-header, .navbar{
+.btn{
+    border: solid;
+    background-color: #7B23E7;
+    color: #fff!important;
+    border-color: #280468;
+}
+.btn:hover{
+    border: solid;
     background-color: #280468;
-    padding: 0.5% 2%;
+    border-color: #7B23E7;
+    color: #fff!important;
 }
-#logo{
-    width: 10%;
+
+/* NAVBAR */
+#navbar {
+    background-color: #280468;
+    box-shadow: 0px 0px 30px 5px #7B23E7;
 }
-.navbar-brand{
-    padding: 0%;
+#navbar a {
     color: #fff;
 }
-.navbar-brand:hover{
+#navbar a:hover {
+    color: #7B23E7;
+}
+#navbar .container{
+    padding: 0;
+    justify-content: space-around;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto Mono", sans-serif;
+}
+.navbar-brand img {
+    width: 80px;
+}
+.navbar-brand span {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-left: 0.5em;
     color: #fff;
 }
-#navbar-links a{
-    color: #fff;
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
-#navbar-links a:hover{
-    color:#BE4BC9;
-}
-#navbar-expand-lg .navbar-nav .nav-link{
-    padding: 1rem .8rem;
+#navbar-items .nav-item {
+    margin: 0 1em;
 }
 .navbar-toggler{
-    color: #494949;
-    background-color: #BE4BC9;
+    margin-right: 4px;
 }
-
 
 /* Masthead */
-.masthead {
+#masthead {
     height: 100vh;
-    overflow: hidden;
-    position: relative;
 }
-.masthead-parallax {
+#masthead .fixed-img {
     background-image: url('/static/imagens/fundo.jpg'); 
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 }
-.masthead-parallax-content {
+#masthead .content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -125,85 +105,65 @@ header, .navbar{
     color: #fff;
     text-align: center;
 }
-.masthead h1 {
+#masthead h1 {
     font-size: 4em;
 }
-
-.masthead p {
+#masthead p {
     font-size: 1.2em;
     width: 100%;
 }
-.btn{
-    background-color: #BE4BC9;
-    color: #fff!important;
-    border-color: #280468;
-}
-.btn:hover{
-    background-color: #280468;
-    border-color: #BE4BC9;
-    color: #fff!important;}
-
-/* Section */
-.section-heading{
-    color: #ffffff;
-    text-align: center;
-    font-size: 3vw;
-}
-.heading-container-fluid{
-    background-color: #280468;
-    width: 100vw;
-    justify-self: center;
-    margin: 2% 0;
-}
 
 /* Destaques */
-.destaques{
+#destaques{
     background-color: #e2e2e2;
 }
-.destaques img{
+#destaques img{
     width: 100%;
 }
-.destaques .card{
+#destaques .card{
     background-color: #280468;
     padding: 3%;
 }
-.destaques .card .card-title{
-    color: #fff;
+#destaques .card .card-title{
+    color: #ffbdca;
 }
-.destaques .card .description{
-    color: #f58bff;
+#destaques .card .description{
+    color: #fff;
     text-align: center;
 }
 
 /* Sobre */
-section#fixed-img.sobre{
-    padding: 0px ;
+#sobre .fixed-img {
+    padding: 0%;
+    background-image: url("/static/imagens/fundo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+#sobre p {
+    font-size: 100%;
+    margin: 0;
+}
+#sobre h2{
+    color: #ffbdca;
+}
+#sobre-text{
+    text-align: center;
+    color: #fff;
 }
 
-    @media (min-width: 768px) {
-        #fixed-img {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-        background-image: url("/static/imagens/fundo.jpg")!important;
-        }
-        #fixed-img .text-center {
-        display: flex;
-        align-items: center;
-        }
-    }
-    #fixed-img p {
-        font-size: 100%;
-        margin: 0;
-    }
-    #fixed-img {
-        background-image: url("/static/imagens/fundo.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background-size: cover;
-    }
-
 /* Video */
+#video{
+    margin-top: 2%;
+}
+#video h2{
+    color: #280468;
+    text-align: center;
+}
+#video p{
+    text-align: center;
+}
 .video-player{
     display: flex;
     justify-content: center;
@@ -211,9 +171,9 @@ section#fixed-img.sobre{
 
 /* Contato */
 section.contato{
-    background-color: #494949;
+    background-color: #280468;
     margin: 2% 0 0;
-    color: #BE4BC9;
+    color: #ffffff;
 }
 section.contato p{
     font-size: 18px;    
@@ -221,13 +181,22 @@ section.contato p{
 }
 section.contato h2{
     text-align: center;
+    color: #ffbdca;
 }
-
 
 /* CTA */
 section.cta p{
     color: #280468;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+.content-cta{
+    text-align: center;
+}
+.content-cta p{
+    margin: 0%;
+}
+#bnt-cta{
+    margin-left: 2%;
 }
 
 /* Footer */
@@ -235,8 +204,11 @@ footer{
     background-color: #280468;
 }
 footer img{
-    width: 150px;
+    width: 200px;
 }
 footer h3{
-    color: #BE4BC9;
+    color: #ffbdca;
+}
+footer p{
+    color: #fff;
 }
