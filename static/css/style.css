@@ -212,3 +212,11 @@ footer h3{
 footer p{
     color: #fff;
 }
+#footer-bottom{
+    background-color: #7B23E7;
+}
+#footer-bottom p{
+    color: #fff;
+    text-align: center;
+    margin: 1% 0;
+}
