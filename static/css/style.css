@@ -213,7 +213,7 @@ footer p{
     color: #fff;
 }
 #footer-bottom{
-    background-color: #7B23E7;
+    background: linear-gradient(#7B23E7, #280468);
 }
 #footer-bottom p{
     color: #fff;
