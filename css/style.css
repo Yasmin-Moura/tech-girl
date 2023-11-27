@@ -91,7 +91,7 @@ li{
     height: 100vh;
 }
 #masthead .fixed-img {
-    background-image: url('/static/imagens/fundo.jpg'); 
+    background-image: url('/imagens/fundo.jpg'); 
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -135,7 +135,7 @@ li{
 /* Sobre */
 #sobre .fixed-img {
     padding: 0%;
-    background-image: url("/static/imagens/fundo.jpg");
+    background-image: url("/imagens/fundo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
